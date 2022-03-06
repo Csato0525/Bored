@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E8DCB8;
+}
+.adatok{
+    
+}
+.mondat{
+    color: 	#4169E1;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: underline dashed 	#4682B4;
+}
+.bejovo{
+    color: 	#4169E1;
+    text-align: center;
+    font-size: 200%;
+}
+.nevek{
+    color: #6A5ACD;
+    text-align: center;
+    font-size: 200%;
+}
+/*________________________________*/
+.item-a {
+    grid-area: header;
+    background-color: #5F9EA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 200%;
+    border-bottom-style: solid;
+}
+.item-b {
+    grid-area: main;
+    background-color: #20B2AA;
+    border-radius: 25px;
+    border-color: black;
+    border-style: solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-c {
+    grid-area: sidebar;
+    background-color: #48D1CC;
+    border-radius: 25px;
+}
+.item-d {
+    grid-area: footer;
+    background-color:#008080;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+/*item-e = button*/
+/* #region */
+.item-e {
+    grid-area: button;
+    position: relative;
+    display: inline-block;
+    color: #20B2AA;
+    text-decoration: none;
+    font-size: 48px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 900;
+}
+.item-e:hover{
+    color: 	#008B8B;
+    background: 	#00CED1;
+    box-shadow: 0 0 5px#00CED1, 0 0 20px#00CED1, 0 0 40px#00CED1;
+}
+#ujra{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* #endregion */
+.container{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 16% 14% 14% 14%;
+    grid-template-rows: 15vh 65vh 10vh 10vh;
+    column-gap: 10px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "header header header header header header header"
+    ". . main main main sidebar sidebar"
+    ". . . button . . ."
+    ". . footer footer footer . .";
+}
