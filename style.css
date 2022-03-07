@@ -7,20 +7,34 @@ body{
     
 }
 .mondat{
-    color: 	#4169E1;
+    color: 	white;
     text-align: center;
     font-size: 200%;
     text-decoration: underline dashed 	#4682B4;
 }
 .bejovo{
-    color: 	#4169E1;
+    color: 	white;
     text-align: center;
     font-size: 200%;
+    margin: 20px;
+}
+.bejovokedvenc{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 160%;
+    margin: 10px;
 }
 .nevek{
-    color: #6A5ACD;
+    color: #413977  ;
     text-align: center;
     font-size: 200%;
+    margin: 20px;
+}
+.nevekkedvenc{
+    color: #413977;
+    text-align: center;
+    font-size: 180%;
+    margin: 10px;
 }
 /*________________________________*/
 .item-a {
@@ -45,21 +59,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
 }
 .item-c {
     grid-area: sidebar;
     background-color: #48D1CC;
     border-radius: 25px;
+    text-align: center;
+    margin:15px;
 }
 .item-d {
     grid-area: footer;
     background-color:#008080;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-left-style: solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    line-height:9vh;
+    margin-top: 15px;
+    margin-right: 15px;
 }
 
-/*item-e = button*/
 /* #region */
 .item-e {
     grid-area: button;
@@ -73,8 +95,28 @@ body{
     cursor: pointer;
     user-select: none;
     font-weight: 900;
+    
+}
+.item-f{
+    grid-area: gomb;
+    position: relative;
+    display: inline-block;
+    color: #20B2AA;
+    text-decoration: none;
+    font-size: 32px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 900;
+    margin: 20px;
 }
 .item-e:hover{
+    color: 	#008B8B;
+    background: 	#00CED1;
+    box-shadow: 0 0 5px#00CED1, 0 0 20px#00CED1, 0 0 40px#00CED1;
+}
+.item-f:hover{
     color: 	#008B8B;
     background: 	#00CED1;
     box-shadow: 0 0 5px#00CED1, 0 0 20px#00CED1, 0 0 40px#00CED1;
@@ -86,16 +128,50 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#kedvenc {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item-g{
+    grid-area: kep;
+}
+#kep{
+    float: right;
+    padding-top: 50%;
+}
 /* #endregion */
 .container{
     display: grid;
     grid-template-columns: 14% 14% 14% 16% 14% 14% 14%;
     grid-template-rows: 15vh 65vh 10vh 10vh;
-    column-gap: 10px;
-    row-gap: 15px;
+
     grid-template-areas: 
     "header header header header header header header"
-    ". . main main main sidebar sidebar"
-    ". . . button . . ."
-    ". . footer footer footer . .";
+    "kep main main main main sidebar ."
+    ". . button button . gomb ."
+    ". footer  footer footer footer . .";
+    
+}
+.item-d h3{
+    font-family: Verdana;
+    font-size: 1.2em;
+    display:inline;
+    padding-right: 30%;
+    
+}
+.item-d h2{
+    
+    font-family: Verdana;
+    font-size: 1.2em;
+    display:inline;
+}
+
+#kedvenccim
+{
+    font-family: Verdana;
+    font-size: 1.5em;
+    color: black;
 }
