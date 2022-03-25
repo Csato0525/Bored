@@ -1,3 +1,3 @@
 # Bored
 gyakorlás
-Honlap:https://github.com/Csato0525/Bored
+Honlap:https://csato0525.github.io/Bored/
